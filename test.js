@@ -114,7 +114,11 @@ const Root = styled<RootProps>('div')`
 // SC.attrs({})
 
 const Link = styled.a.attrs({
-  target: '_blank'
+  target: "_blank",
+  padding: props => props.padding || "1rem",
+  margin: props => props.margin || "1rem"
 })`
   color: red;
+  padding: ${props =>  props.padding || "2rem"};
+
 `

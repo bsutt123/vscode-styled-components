@@ -11,17 +11,20 @@
 				},
 				"2": {
 					"name": "js"
-				},
-				"3": {
+        },
+        "3": {
+          "name": "entity.name.function.tagged-template.js"
+        },
+				"4": {
 					"name": "string.js"
 				},
-				"4": {
+				"5": {
 					"name": "js"
 				},
-				"5": {
+				"6": {
 					"name": "entity.name.function.tagged-template.js"
 				},
-				"6": {
+				"7": {
 					"name": "punctuation.definition.string.template.begin.js"
 				}
 			},
@@ -100,7 +103,27 @@
 					"include": "source.css.styled"
 				}
 			]
-		}
+    },
+    {
+			"name": "styled.attrsEnd",
+			"begin": "\\}\\s{0,1}\\)\\s{0,1}(`)",
+			"beginCaptures": {
+				"1": {
+					"name": "punctuation.definition.string.template.begin.js"
+				}
+			},
+			"end": "`",
+			"endCaptures": {
+				"0": {
+					"name": "punctuation.definition.string.template.end.js"
+				}
+			},
+			"patterns": [
+				{
+					"include": "source.css.styled"
+				}
+			]
+    }
 	],
 	"scopeName": "styled"
 }
